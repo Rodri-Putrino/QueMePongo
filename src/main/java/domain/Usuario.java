@@ -7,7 +7,7 @@ public class Usuario {
     private List<Prenda> prendasValidas;
 
     void cargarPrenda(String tipo, CategoriaPrenda categoria, Material material, Color colorPrimario) {
-        if(categoria.coincideConTipoPrenda(tipo)) {
+        if(categoria.condiceConTipoPrenda(tipo)) {
             Prenda prenda = new Prenda(tipo, categoria, material, colorPrimario);
             prendasValidas.add(prenda);
         }
@@ -17,7 +17,7 @@ public class Usuario {
     }
 
     void cargarPrenda(String tipo, CategoriaPrenda categoria, Material material, Color colorPrimario, Color colorSecundario) {
-        if(categoria.coincideConTipoPrenda(tipo)) {
+        if(categoria.condiceConTipoPrenda(tipo)) {
             Prenda prenda = new Prenda(tipo, categoria, material, colorPrimario, colorSecundario);
             prendasValidas.add(prenda);
         }

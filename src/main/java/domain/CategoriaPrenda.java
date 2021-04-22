@@ -5,7 +5,7 @@ import java.util.List;
 abstract public class CategoriaPrenda {
     private List<String> tiposDePrendas;
 
-    boolean coincideConTipoPrenda(String unTipo) {
+    boolean condiceConTipoPrenda(String unTipo) {
         return tiposDePrendas.contains(unTipo);
     }
 }
