@@ -1,30 +1,32 @@
 package domain;
 
+import domain.exceptions.PrendaInvalidaException;
+
 public class Prenda {
 
-    private String tipo;
-    private Color color;
-    private Color colorSecundario;
-    private Material material;
-    private CategoriaPrenda categoriaPrenda;
+  private TipoPrenda tipoDePrenda;
+  private Material material;
+  private Color colorPrimario;
+  private Color colorSecundario;
 
-    public Prenda(String tipo, CategoriaPrenda categoriaPrenda, Material material, Color color) {
-        this.tipo = tipo;
-        this.color = color;
-        this.material = material;
-        this.categoriaPrenda = categoriaPrenda;
+  public Prenda(TipoPrenda tipoDePrenda, Material material, Color colorPrimario, Color colorSecundario) {
+    if (tipoDePrenda == null) {
+      throw new PrendaInvalidaException("falta el tipo de prenda");
+    }
+    if (material == null) {
+      throw new PrendaInvalidaException("falta el material");
+    }
+    if (colorPrimario == null) {
+      throw new PrendaInvalidaException(("falta el color primario"));
     }
 
-    public Prenda(String tipo, CategoriaPrenda categoriaPrenda, Material material, Color color, Color colorSecundario) {
-        this.tipo = tipo;
-        this.color = color;
-        this.colorSecundario = colorSecundario;
-        this.material = material;
-        this.categoriaPrenda = categoriaPrenda;
-    }
+    this.tipoDePrenda = tipoDePrenda;
+    this.material = material;
+    this.colorPrimario = colorPrimario;
+    this.colorSecundario = colorSecundario;
+  }
 
-    public CategoriaPrenda getCategoriaPrenda() {
-        return categoriaPrenda;
-    }
-
+  public CategoriaPrenda getCategoriaPrenda() {
+    return tipoDePrenda.getCategoria();
+  }
 }

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="8.29">
+<file name="/home/rodri/Escritorio/UTN/3er Año/Diseño de Sistemas/TPs/QueMePongo/src/main/java/domain/Color.java">
+</file>
+<file name="/home/rodri/Escritorio/UTN/3er Año/Diseño de Sistemas/TPs/QueMePongo/src/main/java/domain/Usuario.java">
+<error line="9" severity="warning" message="La línea es mayor de 100 caracteres (encontrado 103)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="19" severity="warning" message="La línea es mayor de 100 caracteres (encontrado 126)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+</file>
+<file name="/home/rodri/Escritorio/UTN/3er Año/Diseño de Sistemas/TPs/QueMePongo/src/main/java/domain/CategoriaPrenda.java">
+</file>
+<file name="/home/rodri/Escritorio/UTN/3er Año/Diseño de Sistemas/TPs/QueMePongo/src/main/java/domain/Prenda.java">
+<error line="18" severity="warning" message="La línea es mayor de 100 caracteres (encontrado 120)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+</file>
+<file name="/home/rodri/Escritorio/UTN/3er Año/Diseño de Sistemas/TPs/QueMePongo/src/main/java/domain/Material.java">
+</file>
+</checkstyle>

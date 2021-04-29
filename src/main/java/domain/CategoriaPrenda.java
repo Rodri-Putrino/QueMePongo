@@ -1,27 +1,5 @@
 package domain;
 
-import java.util.List;
-
-abstract public class CategoriaPrenda {
-    private List<String> tiposDePrendas;
-
-    boolean condiceConTipoPrenda(String unTipo) {
-        return tiposDePrendas.contains(unTipo);
-    }
-}
-
-public class Accesorio extends CategoriaPrenda {
-
-}
-
-public class ParteSuperior extends CategoriaPrenda {
-
-}
-
-public class ParteInferior extends CategoriaPrenda {
-
-}
-
-public class Calzado extends CategoriaPrenda {
-
+public enum CategoriaPrenda {
+  PARTE_SUPERIOR, PARTE_INFERIOR, CALZADO, ACCESORIO
 }
