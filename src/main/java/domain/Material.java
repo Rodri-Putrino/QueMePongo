@@ -6,5 +6,5 @@ public enum Material {
   POLIESTER,
   LANA,
   CUERO,
-
+  PLASTICO
 }
